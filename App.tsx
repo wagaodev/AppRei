@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Home from './src/pages/Home';
+import Index from './src/Index';
 
 export default function App(){
   return(
-      <Home />
+      <Index />
   )
 }
