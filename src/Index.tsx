@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar, View, Text, StyleSheet } from 'react-native';
+import { StatusBar, View, StyleSheet } from 'react-native';
 
 import Routes from './routes';
 
