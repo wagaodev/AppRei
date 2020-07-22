@@ -4,7 +4,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#A22C32'
+  },
+  logoImg: {
+    height: 300,
+    width: 300,
+    resizeMode: "contain"
   },
   title: {
     fontSize: 24,

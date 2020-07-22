@@ -7,8 +7,8 @@ import { Image, View, Text } from 'react-native';
  const SignIn: React.FC = () => {
    return(
     <View style={styles.container}>
-      <Image source={logoImg} />
-      <Text style={styles.title}>Faça seu logon</Text>
+      <Image style={styles.logoImg} source={logoImg} />
+      <Text style={styles.title}>Faça seu Login</Text>
     </View>
    )
  };
