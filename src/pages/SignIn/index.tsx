@@ -17,8 +17,8 @@ import logoImg from '../../assets/logo.png';
 
       <Image style={styles.logoImg} source={logoImg} />
       <Title>Faça o seu login</Title>
-      <Input />
-      <Input />
+      <Input name="email" icon="mail" placeholder="E-Mail" />
+      <Input name="password" icon="lock" placeholder="Senha" />
       <Button onPress={() => {}} >Entrar</Button>
       </ImageBackground>
     </Container>

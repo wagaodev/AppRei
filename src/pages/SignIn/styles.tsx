@@ -10,4 +10,5 @@ export const Title = styled.Text`
   color: #f4ede8;
   font-family: 'Roboto_500Medium';
   margin-top: 44px;
+  margin-bottom: 20px;
 `;
