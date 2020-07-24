@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, ImageBackground } from 'react-native';
 
-import { Container, Title } from './styles';
+import { Container, Title, ForgotPassword, ForgotPasswordText } from './styles';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -19,7 +19,17 @@ import logoImg from '../../assets/logo.png';
       <Title>Faça o seu login</Title>
       <Input name="email" icon="mail" placeholder="E-Mail" />
       <Input name="password" icon="lock" placeholder="Senha" />
-      <Button onPress={() => {}} >Entrar</Button>
+
+      <Button
+       onPress={() => {}} >
+         Entrar
+      </Button>
+
+      <ForgotPassword onPress={() => {}} >
+        <ForgotPasswordText>Esqueci a minha senha</ForgotPasswordText>
+      </ForgotPassword>
+
+
       </ImageBackground>
     </Container>
    )
