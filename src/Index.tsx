@@ -8,7 +8,7 @@ import Routes from './routes';
 
 const Index: React.FC = () => (
     <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="#00431E" />
+      <StatusBar barStyle="light-content" translucent backgroundColor="transparent"/>
       <View style={styles.container}>
         <Routes />
       </View>

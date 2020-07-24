@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, ImageBackground } from 'react-native';
 
 import { Container, Title } from './styles';
 
@@ -10,11 +10,17 @@ import logoImg from '../../assets/logo.png';
  const SignIn: React.FC = () => {
    return(
      <Container>
+      <ImageBackground
+        source={require('../../assets/bg.jpg')}
+        style={styles.backgroundImage}      
+      >
+
       <Image style={styles.logoImg} source={logoImg} />
       <Title>Faça o seu login</Title>
       <Input />
       <Input />
-      <Button>Entrar</Button>
+      <Button onPress={() => {}} >Entrar</Button>
+      </ImageBackground>
     </Container>
    )
  };
@@ -24,7 +30,12 @@ import logoImg from '../../assets/logo.png';
     height: 300,
     width: 300,
     resizeMode: "contain",
-    marginTop: 50
+    marginTop: 100
+  },
+  backgroundImage: {
+    alignItems: 'center',
+    width: '100%',
+    height: '100%'
   }
  });
 
