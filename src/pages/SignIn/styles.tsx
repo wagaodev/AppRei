@@ -1,24 +1,13 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#A22C32'
-  },
-  logoImg: {
-    height: 300,
-    width: 300,
-    resizeMode: "contain"
-  },
-  title: {
-    fontSize: 24,
-    color: '#F4EDE8',
-    fontFamily: 'Roboto_500Medium',
-    marginTop: 64,
-    marginHorizontal: 24
-  }
-})
-
-export default styles;
+export const Container = styled.View`
+  flex: 1;
+  align-items: center;
+  background-color: #A22C32;
+`;
+export const Title = styled.Text`
+  font-size: 24px;
+  color: #f4ede8;
+  font-family: 'Roboto_500Medium';
+  margin-top: 44px;
+`;
