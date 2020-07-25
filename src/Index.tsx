@@ -19,7 +19,6 @@ const Index: React.FC = () => (
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      // backgroundColor: '#312e38'
     },
   })
 
