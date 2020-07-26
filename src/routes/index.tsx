@@ -14,6 +14,7 @@ const AuthRoutes: React.FC = () => (
         backgroundColor: '#111c17',
       }
     }}
+    initialRouteName="SignUp"
   >
     <Auth.Screen name="SignIn" component={SignIn} />
     <Auth.Screen name="SignUp" component={SignUp} />
