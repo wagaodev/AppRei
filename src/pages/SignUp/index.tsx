@@ -7,7 +7,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Feather as Icon } from '@expo/vector-icons';
 import { 
@@ -23,7 +23,7 @@ import Input from '../../components/Input';
 
  const SignUp: React.FC = () => {
   
-
+  const navigation = useNavigation().goBack();
    return(
     <>
       <KeyboardAvoidingView
