@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Image,
   View,
-  StyleSheet,
   ScrollView,
   KeyboardAvoidingView,
   Platform,
@@ -40,7 +39,13 @@ import logoImg from '../../assets/logo.png';
         contentContainerStyle={{ flex: 1}}
       >
         <Container>
-          <Image style={styles.logoImg} source={logoImg} />
+          <Image style={{
+              height: 300,
+              width: 300,
+              resizeMode: "contain",
+              marginTop: 100
+          }}
+          source={logoImg} />
           <View>
           <Title>Faça o seu login</Title>
           </View>
@@ -69,20 +74,5 @@ import logoImg from '../../assets/logo.png';
     </>
    )
  };
-
- const styles = StyleSheet.create({
-  logoImg: {
-    height: 300,
-    width: 300,
-    resizeMode: "contain",
-    marginTop: 100
-  },
-  backgroundImage: {
-    alignItems: 'center',
-    width: '100%',
-    height: '100%',
-    position: 'absolute'
-  }
- });
 
  export default SignIn;

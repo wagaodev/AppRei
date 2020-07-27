@@ -10,9 +10,11 @@ export const Container = styled.View`
   padding: 0 0px ${Platform.OS === 'android' ? 200 : 40 }px;
 `;
 export const Title = styled.Text`
-  margin: 20px 0px 30px 0px;
-  font-size: 22px;
-  color: #fff;
+  font-size: 24px;
+  color: #f4ede8;
+  font-family: 'Roboto_500Medium';
+  margin-top: 44px;
+  margin-bottom: 20px;
 `;
 export const BackToSignIn = styled.TouchableOpacity`
   position: absolute;
@@ -29,7 +31,9 @@ export const BackToSignIn = styled.TouchableOpacity`
   background: #0105;
 `;
 export const BackToSignInText = styled.Text`
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: 'Roboto_400Regular';
   color: #fff;
-  font-family: 'Roboto_500Medium';
-  font-size: 18px;
+  margin-left: 10px;
 `;

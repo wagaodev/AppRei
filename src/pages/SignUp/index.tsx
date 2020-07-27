@@ -2,13 +2,11 @@ import React from 'react';
 import {
   Image,
   View,
-  StyleSheet,
   ScrollView,
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
 import { Feather as Icon } from '@expo/vector-icons';
 import { 
   Container,
@@ -37,7 +35,13 @@ import Input from '../../components/Input';
           contentContainerStyle={{ flex: 1}}
         >
           <Container>
-            <Image style={styles.logoImg} source={logoImg} />
+            <Image style={{
+              width: 300,
+              height: 300,
+              resizeMode: 'contain',
+              marginTop: 100
+            }}
+             source={logoImg} />
             <Title>Crie sua conta</Title>
 
             <Input name="text" icon="user" placeholder="Nome"/>
@@ -67,14 +71,5 @@ import Input from '../../components/Input';
     </>
    );
  };
-
- const styles = StyleSheet.create({
-  logoImg: {
-    width: 300,
-    height: 300,
-    resizeMode: 'contain',
-    marginTop: 100
-  },
- });
 
  export default SignUp;
