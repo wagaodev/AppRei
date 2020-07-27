@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import {
   Image,
   View,
@@ -7,6 +7,8 @@ import {
   Platform,
   Keyboard,
 } from 'react-native';
+import { Form } from '@unform/mobile';
+import { FormHandles } from '@unform/core';
 import { useNavigation } from '@react-navigation/native'
 import { Feather as Icon } from '@expo/vector-icons';
 
@@ -25,7 +27,13 @@ import logoImg from '../../assets/logo.png';
 
  const SignIn: React.FC = () => {
 
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+
+  const formRef = useRef(null);
+
+  const handleSignIn = useCallback((data: object) => {
+    console.log(data)
+  }, []);
 
    return(
      <>
@@ -49,13 +57,16 @@ import logoImg from '../../assets/logo.png';
           <View>
           <Title>Faça o seu login</Title>
           </View>
-          <Input name="email" icon="mail" placeholder="E-Mail" />
-          <Input name="password" icon="lock" placeholder="Senha" />
 
-          <Button
-          onPress={() => {}} >
-            Entrar
-          </Button>
+          <Form ref={formRef} onSubmit={handleSignIn} >
+            <Input name="email" icon="mail" placeholder="E-Mail" />
+            <Input name="password" icon="lock" placeholder="Senha" />
+
+            <Button
+            onPress={() => {}} >
+              Entrar
+            </Button>
+          </Form>
 
           <ForgotPassword onPress={() => {}} >
             <ForgotPasswordText>Esqueci a minha senha</ForgotPasswordText>
