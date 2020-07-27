@@ -23,7 +23,8 @@ import Input from '../../components/Input';
 
  const SignUp: React.FC = () => {
   
-  const navigation = useNavigation().goBack();
+  const navigation = useNavigation()
+
    return(
     <>
       <KeyboardAvoidingView
@@ -56,7 +57,7 @@ import Input from '../../components/Input';
           <View style={{ justifyContent: "flex-end"}}>
 
             <BackToSignIn
-              onPress={() => {}}
+              onPress={() => navigation.goBack() }
               >
             <Icon name="arrow-left" size={20} color="#A22C32" />
               <BackToSignInText style={{ marginLeft: 20 }}>Voltar para tela de login</BackToSignInText>
